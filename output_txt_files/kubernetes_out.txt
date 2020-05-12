@@ -1,1 +1,15 @@
-<paste log output from Kubernetes-mediated prediction, here>
+ubuntu:~/environment/ml-microservice-kubernetes (master) $ ./run_kubernetes.sh
+Flag --generator has been deprecated, has no effect and will be removed in the future.
+pod/ml-microservice created
+NAME              READY   STATUS              RESTARTS   AGE
+ml-microservice   0/1     ContainerCreating   0          1s
+error: unable to forward port because pod is not running. Current status=Pending
+ubuntu:~/environment/ml-microservice-kubernetes (master) $ ./run_kubernetes.sh
+Flag --generator has been deprecated, has no effect and will be removed in the future.
+Error from server (AlreadyExists): pods "ml-microservice" already exists
+NAME              READY   STATUS    RESTARTS   AGE
+ml-microservice   1/1     Running   0          32s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
